@@ -1,0 +1,15 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+
+metadata:
+  name: far-ykcluster
+  region: ap-southeast-1
+
+
+fargateProfiles:
+  - name: fargate
+    selectors:
+     - namespace: kube-system
+     - namespace: 
+     - namespace: default
